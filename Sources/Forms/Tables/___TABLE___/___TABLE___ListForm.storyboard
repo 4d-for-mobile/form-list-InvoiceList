@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ogb-fa-BrX">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Form-->
+        <scene sceneID="skp-Bg-beV">
+            <objects>
+                <tableViewController storyboardIdentifier="___TABLE___ListForm" id="Dxc-Bl-At2" userLabel="List Form" customClass="___TABLE___ListForm" customModule="___PRODUCT___" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="Re1-1g-DVP" customClass="AnimatableTableView" customModule="IBAnimatable">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="___TABLE___" rowHeight="110" id="LNn-VU-5br" customClass="___TABLE___CustomCell" customModule="___PRODUCT___" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNn-VU-5br" id="bUw-MO-Pjd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSR-uA-r0j">
+                                            <rect key="frame" x="40" y="109" width="334" height="1"/>
+                                            <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="ODG-1B-0GJ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-XT-RM1">
+                                            <rect key="frame" x="0.0" y="-10" width="414" height="130"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="___FIELD_2_LABEL___" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyS-wy-Ryn">
+                                                    <rect key="frame" x="16" y="70" width="181.66666666666666" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="uZM-O0-1y9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_2___" value="___FIELD_2_BINDING_TYPE___"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="___FIELD_1_LABEL___" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-4f-S1j">
+                                                    <rect key="frame" x="16" y="30" width="213" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="KOE-0Q-a7B"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_1___" value="___FIELD_1_BINDING_TYPE___"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="___FIELD_3_LABEL___" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Viw-Hf-mWG">
+                                                    <rect key="frame" x="252" y="30" width="150" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="dBR-Be-HKf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" name="BackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_3___" value="___FIELD_3_BINDING_TYPE___"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="df7-jh-pMa">
+                                                    <rect key="frame" x="184.66666666666663" y="70" width="217.33333333333337" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="___FIELD_4_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UM-jR-tS0">
+                                                            <rect key="frame" x="16" y="0.0" width="182.33333333333334" height="30"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_4___" value="___FIELD_4_BINDING_TYPE___"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="1UM-jR-tS0" secondAttribute="trailing" constant="19.000000000000028" id="1Kr-6o-jye"/>
+                                                        <constraint firstItem="1UM-jR-tS0" firstAttribute="leading" secondItem="df7-jh-pMa" secondAttribute="leading" constant="16" id="BSm-bO-c5U"/>
+                                                        <constraint firstItem="1UM-jR-tS0" firstAttribute="top" secondItem="df7-jh-pMa" secondAttribute="top" id="LmL-AE-Hgc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1UM-jR-tS0" secondAttribute="bottom" id="atk-8E-ZDt"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="MyS-wy-Ryn" firstAttribute="leading" secondItem="i0R-XT-RM1" secondAttribute="leading" constant="16" id="39w-Zo-jTU"/>
+                                                <constraint firstItem="g5c-4f-S1j" firstAttribute="leading" secondItem="i0R-XT-RM1" secondAttribute="leading" constant="16" id="9B0-Jj-Vcd"/>
+                                                <constraint firstItem="g5c-4f-S1j" firstAttribute="top" secondItem="Viw-Hf-mWG" secondAttribute="top" id="CLp-K4-xEY"/>
+                                                <constraint firstItem="df7-jh-pMa" firstAttribute="height" secondItem="MyS-wy-Ryn" secondAttribute="height" id="DZR-Te-L7m"/>
+                                                <constraint firstAttribute="trailing" secondItem="df7-jh-pMa" secondAttribute="trailing" constant="12" id="N3o-YC-M3R"/>
+                                                <constraint firstItem="g5c-4f-S1j" firstAttribute="height" secondItem="Viw-Hf-mWG" secondAttribute="height" id="S7Y-NW-TiT"/>
+                                                <constraint firstAttribute="bottom" secondItem="MyS-wy-Ryn" secondAttribute="bottom" constant="30" id="SLt-td-xGv"/>
+                                                <constraint firstItem="df7-jh-pMa" firstAttribute="top" secondItem="MyS-wy-Ryn" secondAttribute="top" id="XmO-Wp-B4P"/>
+                                                <constraint firstItem="MyS-wy-Ryn" firstAttribute="top" secondItem="g5c-4f-S1j" secondAttribute="bottom" constant="10" id="gYa-Ir-Ejh"/>
+                                                <constraint firstItem="g5c-4f-S1j" firstAttribute="top" secondItem="i0R-XT-RM1" secondAttribute="top" constant="30" id="pZz-80-YfZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Viw-Hf-mWG" secondAttribute="trailing" constant="12" id="tIc-nU-rwO"/>
+                                                <constraint firstItem="Viw-Hf-mWG" firstAttribute="leading" secondItem="g5c-4f-S1j" secondAttribute="trailing" constant="23" id="vCs-2A-Pkq"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="i0R-XT-RM1" firstAttribute="leading" secondItem="bUw-MO-Pjd" secondAttribute="leading" id="6Pt-q7-Qdf"/>
+                                        <constraint firstAttribute="bottom" secondItem="eSR-uA-r0j" secondAttribute="bottom" id="Esx-Jo-FrN"/>
+                                        <constraint firstItem="i0R-XT-RM1" firstAttribute="centerY" secondItem="bUw-MO-Pjd" secondAttribute="centerY" id="Moc-sE-XGC"/>
+                                        <constraint firstItem="eSR-uA-r0j" firstAttribute="leading" secondItem="bUw-MO-Pjd" secondAttribute="leading" constant="40" id="X7C-Gs-nM4"/>
+                                        <constraint firstAttribute="trailing" secondItem="i0R-XT-RM1" secondAttribute="trailing" id="f6O-Kk-zfA"/>
+                                        <constraint firstAttribute="trailing" secondItem="eSR-uA-r0j" secondAttribute="trailing" constant="40" id="yuf-7F-9n1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="statusLabel" destination="1UM-jR-tS0" id="SB5-eR-OZK"/>
+                                    <outlet property="statusLabelColor" destination="df7-jh-pMa" id="q4J-Kz-aSC"/>
+                                    <segue destination="TmP-Gk-7ej" kind="presentation" identifier="showDetails" id="lRt-3I-ZEi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="actions" value="___ENTITY_ACTIONS___"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dxc-Bl-At2" id="Nbk-b7-Ogd"/>
+                            <outlet property="delegate" destination="Dxc-Bl-At2" id="k5f-vV-EBw"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="___TABLE_LABEL___" id="Md6-BR-hjc">
+                        <barButtonItem key="leftBarButtonItem" image="backButton" id="oNP-za-8R3" userLabel="PreviousPage Button Item">
+                            <color key="tintColor" name="ForegroundColor"/>
+                            <connections>
+                                <action selector="previousPage:" destination="Dxc-Bl-At2" id="1zk-Aq-3yo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="searchableField" value="___SEARCHABLE_FIELD___"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="sortField" value="___SORT_FIELD___"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="sectionFieldname" value="___SECTION_FIELD___"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="sectionFieldFormatter" value="___SECTION_FIELD_BINDING_TYPE___"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSectionBar" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="actions" value="___TABLE_ACTIONS___"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="searchBar" destination="eqo-z7-dF9" id="ZJt-km-6cn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfs-ds-X4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" id="eqo-z7-dF9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </objects>
+            <point key="canvasLocation" x="513.04347826086962" y="111.68478260869566"/>
+        </scene>
+        <!--___TABLE___DetailsForm-->
+        <scene sceneID="pzT-Ts-eNA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="___TABLE___DetailsForm" id="TmP-Gk-7ej" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZA2-Ia-mDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="112"/>
+        </scene>
+        <!--___TABLE_SHORT_LABEL___-->
+        <scene sceneID="43G-ax-Y26">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ogb-fa-BrX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="___TABLE_SHORT_LABEL___" image="___TABLE_ICON___" selectedImage="___TABLE_ICON___" id="65z-ho-M8H"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="06B-nF-C5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="tintColor" name="ForegroundColor"/>
+                        <color key="barTintColor" name="BackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="ForegroundColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="ForegroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dxc-Bl-At2" kind="relationship" relationship="rootViewController" id="h9W-QC-Suo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9P-ml-O9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="___TABLE_ICON___" width="25" height="25"/>
+        <image name="backButton" width="16" height="16"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.19215686274509805" green="0.51372549019607838" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ForegroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>
