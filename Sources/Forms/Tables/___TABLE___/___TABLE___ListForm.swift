@@ -10,7 +10,7 @@ import QMobileUI
 
 /// Generated list form for ___TABLE___ table.
 @IBDesignable
-class ___TABLE___CustomCell : UITableViewCell {
+class ___TABLE___CustomCell: UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var statusLabelColor: UIView!
 
