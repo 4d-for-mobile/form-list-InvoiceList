@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
                 android:text="___TEXT_1___"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                 android:textColor="?colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,8 +51,8 @@
                 android:scrollbars="none"
                 android:text="___TEXT_2___"
                 android:textAlignment="viewEnd"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                android:textColor="?android:colorPrimary"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textColor="?colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -79,14 +79,14 @@
                 android:layout_marginBottom="8dp"
                 android:scrollbars="none"
                 android:text="___TEXT_3___"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                 android:textColor="?colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 3" />
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,11 +109,11 @@
                     android:layout_marginBottom="8dp"
                     android:scrollbars="none"
                     android:text="___TEXT_4___"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                     android:textColor="?colorOnPrimary"
                     tools:text="My field 4" />
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
