@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:padding="16dp">
 
         <!-- START EDITING HERE -->
 
@@ -23,9 +23,7 @@
             android:id="@+id/constraint1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +36,7 @@
                 android:scrollbars="none"
                 android:text="___TEXT_1___"
                 android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-                android:textColor="?colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +50,7 @@
                 android:text="___TEXT_2___"
                 android:textAlignment="viewEnd"
                 android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-                android:textColor="?colorPrimary"
+                android:textColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -61,9 +59,10 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraint2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,47 +72,30 @@
                 android:id="@+id/___SPECIFIC_ID_3___"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="6dp"
-                android:layout_marginBottom="8dp"
                 android:scrollbars="none"
                 android:text="___TEXT_3___"
                 android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-                android:textColor="?colorOnSurface"
+                android:textColor="?attr/colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 3" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardView"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/___SPECIFIC_ID_4___"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="12dp"
-                app:cardBackgroundColor="?colorPrimary"
-                app:cardCornerRadius="12dp"
+                android:clickable="false"
+                android:scrollbars="none"
+                android:singleLine="true"
+                android:text="___TEXT_4___"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textColor="?attr/colorOnPrimary"
+                app:chipBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/___SPECIFIC_ID_4___"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:scrollbars="none"
-                    android:text="___TEXT_4___"
-                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-                    android:textColor="?colorOnPrimary"
-                    tools:text="My field 4" />
-
-            </com.google.android.material.card.MaterialCardView>
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="My field 4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
