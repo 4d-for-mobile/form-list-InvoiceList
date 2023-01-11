@@ -31,20 +31,21 @@
 
             <TextView
                 android:id="@+id/___SPECIFIC_ID_1___"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
                 android:text="___TEXT_1___"
                 android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                 android:textColor="?attr/colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/___SPECIFIC_ID_2___"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 1" />
 
             <TextView
                 android:id="@+id/___SPECIFIC_ID_2___"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
                 android:text="___TEXT_2___"
@@ -53,6 +54,7 @@
                 android:textColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/___SPECIFIC_ID_1___"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 2" />
 
@@ -70,20 +72,21 @@
 
             <TextView
                 android:id="@+id/___SPECIFIC_ID_3___"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
                 android:text="___TEXT_3___"
                 android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
                 android:textColor="?attr/colorOnSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/___SPECIFIC_ID_4___"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 3" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/___SPECIFIC_ID_4___"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:scrollbars="none"
@@ -94,6 +97,7 @@
                 app:chipBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/___SPECIFIC_ID_3___"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 4" />
 
