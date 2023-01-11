@@ -97,7 +97,6 @@
                 app:chipBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/___SPECIFIC_ID_3___"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="My field 4" />
 
